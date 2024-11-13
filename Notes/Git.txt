@@ -1,0 +1,57 @@
+========================================================================================================================
+												GIT
+========================================================================================================================
+
+- Free and open source distributed version control system.
+- can handle  small to large applications and projects.	
+- Allows team members to use  same files by distributed branches and env.
+- Git allows :
+	- It allows to track changes.
+	- Strong Version Control.
+	- Allows team members to use same files without needing to sync every time.
+	
+Git Commands                                        Details
+=============                    				==============
+  git init								Initialises a new, empty repository
+  git add .								adds files from nonstaged area to staged git area
+  git commit -m "info here" 			Move files from staged area to commit
+  git checkout <commit #>				Opens up previous commit
+  git log								Shows commited snapshots
+  
+GIT Branch:
+- A pointer of data changes .
+- Isolation of feature development.
+- Linear development.
+
+git branch commands							Details
+===================						===============
+
+git branch <branch name>            create new isolated name
+git checkout branch <branchname>    change root to selected branch
+git witch branch <branch name>      Same as above new command as of Git(2.23)
+
+========================================================================================================================
+					GITHUB
+========================================================================================================================
+
+- GitHub is:
+	-Git repository hosting service.
+	-User friendly interface.
+	-Large development platform.top git repository hosting service available
+
+*********
+Git and Github are different: git is a technology that is free and open source distributed control system and github is 
+
+========================================================================================================================
+					RENDER
+========================================================================================================================
+
+- Render is a "Platform as a Service (PaaS).
+- Helps developers build, run and operate entirely on cloud.
+- Developers can focus on coding and not have to worry about the infrastructure of their applications.
+
+- Render is Code deployment system
+- CI/CD
+- Load Balancing
+
+Platforms similar to the RENDER are AWS, AZURE, GCLOUD

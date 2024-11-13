@@ -1,0 +1,34 @@
+========================================================================================================================
+												JWT (JSON Web Token)
+========================================================================================================================
+
+
+- Json web token is self contained way to securely transmit data and information between two parties using  a json object.
+
+- json web token can be trusted because it can be digitally signed, which in return jwt is changed at all can be known
+
+- jwt should be used when dealing with authorization.
+
+- jwt is a best way to have communication between server and client.
+
+JSON Web Token includes:
+	1. Header
+	2. Payload
+	3. signature
+	     
+	     (1) (2)  (3)
+	ex: aaaa.bbbb.cccc
+	
+	1. Header:
+	 - It usually consists of two parts i.algo and ii.type: {"alg":"HS256","typ":"JWT"}
+	 - Jwt is encoded with Base64 to create first part of the "JWT".
+	
+	2. Payload:
+	 - This part consists of the data. The payload consists of claim, and there are 3 dufferent types of claims.
+		- Registered
+		- Private
+		- Public
+	 - The jwt is the encoded with Base64. 
+	
+	3. Signature:
+	 - It is created using algorithm in the header to hash out the encoder header, encoded payload with a secret. It is saved but can't be accessed by client.

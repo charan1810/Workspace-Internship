@@ -1,0 +1,99 @@
+========================================================================================================================
+												FAST API
+========================================================================================================================
+
+- api development framework (easy touse, fast, lightwt, swagger doc feature is awesome)
+- One of the fastest Python frameworks available.
+- FASTAPI is a pytho web-framework for building modern APIs
+- Fast performance
+- Fast Development 
+
+HTTP request method:
+------------------------
+CRUD					HTTP RequestMethod
+-----					-------------------
+Create			-		POST
+Read			-		GET
+Update			-		PUT
+Delete			-		Delete
+
+- To run an fastapi python file we should use the following commands in terminal:
+	- uvicorn filename:app --reload
+	- fastapi dev filename.py
+	- fastapi run filename.
+	
+- PATH PARAMETERS:
+	-Path Parameters are request parameters that have been attached to the URL
+	-They are usually defines as a way to find information based in location
+
+******* In url if we need to give a space then we should
+		use "%20".**************
+		
+********* If in url we want to give dynamic parameter then we need to use 
+			'{}'braces***********
+
+- QUERY PARAMETERS:
+	-these are request parameters that have been attached after a "?"
+	- query parameters have name=value pairs
+	
+	- example:
+		127.0.0.1.8000/books/?category=children fiction
+
+-POST Request Method:
+	-used to create data
+	-POST can have a body that has additional info that GET does not have
+	-In POST request method we have an 'Body()' function which checks the format ofthe data recieved from client if it is same as the default data format then it processes if not then ot shows 422 error
+	-In get requests method we dont have the 'Body()' function
+	
+-PUT request:
+	-Used to update data
+	-PUT can have a body that has additional information (like POST) that GET does not have
+	
+-DELETE request:
+	-Used to delete the required data
+
+========================================================================================================================
+														PYDANTICS
+========================================================================================================================
+
+-Python library that is used for data modeling, data parsing and has efficient error handling
+-Pydantics is commonly used as a resource for data validation and how to handle data coming to our FastAPI application
+
+********How to use pydantics:
+
+- create a different request model for data validation
+- field data validation on each variable / element
+
+========================================================================================================================
+															STATUS CODES
+========================================================================================================================
+- An HTTP status code is used to help the client (the user or system submitting data to the server) to understand what happened on the server side application.
+
+-Status codes are international standards on how a client/server should handle the resullt of a request
+
+-It allows everyone who sends a request to know if their submission was successful or not.
+
+				100 and above are for "Information". You rarely use them directly. ...
+				200 and above are for "Successful" responses. These are the ones you would use the most. ...
+				(200 - OK,201 - POST(created entity on successful req),204 - PUT(req is successful but no entity)
+				300 and above are for "Redirection". ...
+				400 and above are for "Client error" responses. ...
+				(400 - BadReq, 401 - Unauthorised, 404:NotFound, 422 - Unprocessable entity)
+				500 and above are for server errors.
+				(500 - Internal Server error)
+
+========================================================================================================================
+													SQLALchemy
+========================================================================================================================
+
+-It is an ibject relational mapping used in FastAPI
+
+========================================================================================================================
+											Authorization and Authentication
+========================================================================================================================
+
+- Authentication is the process of verifying the identity of the user.
+- Authorization is determining wether the authenticated person has rights to perform certain action.
+- In fastapi these concepts can be implemented using middleware sources and dependencies of the application.
+- JWT s are used for authentication by generating the tokens upon the user login which is used to verify the user identity in subsequent requests.
+- OAuth is generally used for authorization, it is authorization framework that can enable the application to obtain  limited access to user accounts on the HTTP service.

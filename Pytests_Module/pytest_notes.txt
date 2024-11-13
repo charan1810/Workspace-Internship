@@ -1,0 +1,10 @@
+========================================================================================================================
+												Pytest
+========================================================================================================================
+- Popluar testing framework for python.
+- Known for simplicity, scalability and ability to handle both unit and integration tests.
+
+- Top reasons to use pytests:
+	- Simple n flexible: Native assertions.
+	- Fixtures: feature setup and teardown.
+	- Parameterizeed testing: Run same tesst with different data.

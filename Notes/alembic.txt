@@ -1,0 +1,18 @@
+========================================================================================================================
+													ALEMBIC DATA
+========================================================================================================================
+
+- Lightwt database migration tool when using SQLAlchemy.
+- Before use we need to install using "pip install alembic".
+
+Alembic Command: 
+				- alembic init <folder name> : Initialises new generic environment.
+				- alembic revision -m <message> : Creates a new version of the environment.
+				- alembic upgrade <revision #> : run our upgrade migration to our databse.
+				- alembic downgrade-1 : run our downgrade migration to our database.
+
+- In a general databse after db created we cannot upgrade or modify the db tables, so to overcome this prob we use alembic.
+- For db revision in alembic we use alembic revision
+	- ex:  alembic revisoin -m "create phone number col on users table"- this line creates a new file where we can write the upgraded code.
+
+- Each new revision will have an revision ID.

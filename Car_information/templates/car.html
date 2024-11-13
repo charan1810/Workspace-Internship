@@ -1,0 +1,28 @@
+<style>
+    .btn {
+        margin: 0.2em;
+    }
+</style>
+
+<div>
+    <h2>{{Car["year"]}} {{Car["make"]}} {{Car["model"]}}</h2>
+
+    <p><strong>Price: {{Car["price"]}}$</strong></p>
+    <p><strong>{{Car["engine"]}}</strong> engine</p>
+
+    {% if Car["autonomous"]%}
+    <p>This Car has autonomous functionality.</p>
+    {% else %}
+    <p>This Car <strong>does not</strong> have autonomous functionality.</p>
+    {% endif %}
+
+    {% if Car["sold"] %}
+    <p>Sold in {{Car["sold"]|join(',')}}</p>
+    {% else %}
+    <p>Not currently available.</p>
+    {% endif %}
+    <p>ID: {{id}}</p>
+
+    <a class="btn btn-dark" href="/edit?id={{id}}">Edit</a>
+    <a class="btn btn-danger" href="/delete/{{id}}">Delete</a>
+</div>

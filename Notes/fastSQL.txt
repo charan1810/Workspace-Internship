@@ -1,0 +1,10 @@
+========================================================================================================================
+													FastApi-SQL
+========================================================================================================================
+
+STEP-BY-STEP:
+- First, we have to connect to a database using SQLALCHEMY'S create_engine
+- This connection is  then used by SQL alchemy to perform  operations like create tables,executing queries, and managing transactions.
+- Define Database models
+- After setting up the connection, you define your database tables using SQLAlchemy ORM models. These models represent tables in your database.
+- Create Tables in the Database (models.Base.metadata.create_all(bind=engine))
