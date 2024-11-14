@@ -74,5 +74,5 @@ Following these steps will ensure all necessary dependencies are installed for e
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/your-username/workspace-internship.git
+git clone https://github.com/charan1810/workspace-internship.git
 cd workspace-internship
