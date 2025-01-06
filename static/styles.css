@@ -1,0 +1,18 @@
+
+.chat-row {
+    background-color: #116bbf;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    max-width: 95%;
+}
+
+.chat-row strong {
+    color: #e1ff00;
+}
+
+.chat-row:nth-child(even) {
+    background-color: #e0e0e0;
+}
